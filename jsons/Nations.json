@@ -25,9 +25,9 @@
         "innerColor": [255,0,0],
         
         "uniques": [
-            "[+15]% Strength <when attacking>",
-            "[+10]% Production <when constructing [Armored] units>",
-            "Gain [30] Gold <upon conquering a city>"
+            "Production +10% <when constructing [Armored] units>",
+            "Gain 30 Gold <upon conquering a city>",
+            "Strength +15% <when attacking>"
         ],
         
         "cities": [
