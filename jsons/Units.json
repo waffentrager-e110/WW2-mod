@@ -9,9 +9,9 @@
         "cost": 420,
         "requiredTech": "Replaceable Parts",
         "uniques": [
-            "[+25]% Strength <when fighting in [Foreign Lands]>",
-            "[-15]% Strength <when fighting in [Friendly Lands]>",
-            "Units start with [March] promotion"
+            "[+25]% Strength <in [Enemy Lands]>",
+            "[-15]% Strength <in [Friendly Lands]>",
+            "New units start with [March] promotion"
         ],
         "attackSound": "unit_shoot_inf.ogg"
     }
