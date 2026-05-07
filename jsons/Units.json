@@ -1,7 +1,7 @@
 [
     {
         "name": "СС-элита",
-        "unitType": "Infantry",
+        "unitType": "Gunpowder",
         "uniqueTo": "Третий Рейх",
         "replaces": "Infantry",
         "movement": 2,
@@ -9,9 +9,9 @@
         "cost": 420,
         "requiredTech": "Replaceable Parts",
         "uniques": [
-            "[+25]% Strength <in [Enemy Lands]>",
-            "[-15]% Strength <in [Friendly Lands]>",
-            "New units start with [March] promotion"
+            "[+25]% Strength <in [Enemy Land]>",
+            "[-15]% Strength <in [Friendly Land]>",
+            "Gains the [March] promotion"
         ],
         "attackSound": "unit_shoot_inf.ogg"
     }
