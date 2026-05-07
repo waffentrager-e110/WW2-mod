@@ -1,4 +1,43 @@
 [
+    // ==============================
+    // ОБЩИЕ ЗДАНИЯ (доступны всем)
+    // ==============================
+    
+    {
+        "name": "Блиндаж",
+        "cost": 60,
+        "defence": 25,
+        "uniques": ["Gives a defensive bonus of [25]%"],
+        "requiredTech": "Ballistics"
+    },
+    
+    {
+        "name": "ДОТ",
+        "replaces": "Arsenal",
+        "uniqueTo": "Третий Рейх",
+        "cost": 150,
+        "defence": 50,
+        "uniques": [
+            "Gives a defensive bonus of [50]%",
+            "City must have a [Блиндаж]"
+        ],
+        "requiredTech": "Replaceable Parts"
+    },
+    
+    {
+        "name": "Полевой госпиталь",
+        "cost": 120,
+        "uniques": [
+            "All units in this city heal [15] HP per turn",
+            "New units in this city start with [Medic I] promotion"
+        ],
+        "requiredTech": "Pharmaceuticals"
+    },
+    
+    // ==============================
+    // УНИКАЛЬНЫЕ ЗДАНИЯ ГЕРМАНИИ
+    // ==============================
+    
     {
         "name": "Заводы Круппа",
         "replaces": "Factory",
@@ -21,12 +60,16 @@
         "culture": 2,
         "happiness": 2,
         "uniques": [
-            "New units in all cities start with [Discipline I] promotion",
+            "New units in all cities start with [Discipline II] promotion",
             "Unhappiness -10% <from [Population]>"
         ],
         "requiredTech": "Combustion",
         "requiredBuildingInAllCities": "Police Station"
     },
+    
+    // ==============================
+    // УНИКАЛЬНЫЕ ЗДАНИЯ СССР
+    // ==============================
     
     {
         "name": "Уралмаш",
@@ -42,6 +85,23 @@
     },
     
     {
+        "name": "ГКО",
+        "uniqueTo": "СССР",
+        "isNationalWonder": true,
+        "cost": 350,
+        "uniques": [
+            "When a [Land] unit is trained in any city, gain [25]% of its cost as Production (production overflow)",
+            "All cities gain [25]% Defense"
+        ],
+        "requiredTech": "Combustion",
+        "requiredBuildingInAllCities": "Блиндаж"
+    },
+    
+    // ==============================
+    // УНИКАЛЬНЫЕ ЗДАНИЯ США
+    // ==============================
+    
+    {
         "name": "Пентагон",
         "uniqueTo": "Америка",
         "isWonder": true,
@@ -51,5 +111,35 @@
             "Gold cost -25% <for upgrading units>"
         ],
         "requiredTech": "Radar"
+    },
+    
+    {
+        "name": "Военная база",
+        "replaces": "Barracks",
+        "uniqueTo": "Америка",
+        "cost": 80,
+        "uniques": [
+            "New [Land] units gain [20] Experience",
+            "New [Air] units gain [15] Experience"
+        ],
+        "requiredTech": "Replaceable Parts"
+    },
+    
+    // ==============================
+    // УНИКАЛЬНЫЕ ЗДАНИЯ ВЕЛИКОБРИТАНИИ
+    // ==============================
+    
+    {
+        "name": "Блетчли-парк",
+        "uniqueTo": "Англия",
+        "isNationalWonder": true,
+        "cost": 350,
+        "science": 4,
+        "uniques": [
+            "All espionage actions are [50]% more effective",
+            "Gain 10 Science <after discovering [Radar]>"
+        ],
+        "requiredTech": "Radar",
+        "requiredBuildingInAllCities": "University"
     }
 ]
