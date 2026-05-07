@@ -1,8 +1,4 @@
 [
-    // ==============================
-    // ОБЩИЕ ЗДАНИЯ (доступны всем)
-    // ==============================
-    
     {
         "name": "Блиндаж",
         "cost": 60,
@@ -34,10 +30,6 @@
         "requiredTech": "Pharmaceuticals"
     },
     
-    // ==============================
-    // УНИКАЛЬНЫЕ ЗДАНИЯ ГЕРМАНИИ
-    // ==============================
-    
     {
         "name": "Заводы Круппа",
         "replaces": "Factory",
@@ -65,81 +57,5 @@
         ],
         "requiredTech": "Combustion",
         "requiredBuildingInAllCities": "Police Station"
-    },
-    
-    // ==============================
-    // УНИКАЛЬНЫЕ ЗДАНИЯ СССР
-    // ==============================
-    
-    {
-        "name": "Уралмаш",
-        "replaces": "Factory",
-        "uniqueTo": "СССР",
-        "cost": 250,
-        "production": 3,
-        "uniques": [
-            "[+20]% Production <when constructing [Armored] units>",
-            "[-15]% Production <when constructing anything else>"
-        ],
-        "requiredTech": "Industrialization"
-    },
-    
-    {
-        "name": "ГКО",
-        "uniqueTo": "СССР",
-        "isNationalWonder": true,
-        "cost": 350,
-        "uniques": [
-            "When a [Land] unit is trained in any city, gain [25]% of its cost as Production (production overflow)",
-            "All cities gain [25]% Defense"
-        ],
-        "requiredTech": "Combustion",
-        "requiredBuildingInAllCities": "Блиндаж"
-    },
-    
-    // ==============================
-    // УНИКАЛЬНЫЕ ЗДАНИЯ США
-    // ==============================
-    
-    {
-        "name": "Пентагон",
-        "uniqueTo": "Америка",
-        "isWonder": true,
-        "cost": 600,
-        "uniques": [
-            "All units gain [15]% Strength",
-            "[-25]% Gold cost for upgrading units"
-        ],
-        "requiredTech": "Radar"
-    },
-    
-    {
-        "name": "Военная база",
-        "replaces": "Barracks",
-        "uniqueTo": "Америка",
-        "cost": 80,
-        "uniques": [
-            "New [Land] units gain [20] Experience",
-            "New [Air] units gain [15] Experience"
-        ],
-        "requiredTech": "Replaceable Parts"
-    },
-    
-    // ==============================
-    // УНИКАЛЬНЫЕ ЗДАНИЯ ВЕЛИКОБРИТАНИИ
-    // ==============================
-    
-    {
-        "name": "Блетчли-парк",
-        "uniqueTo": "Англия",
-        "isNationalWonder": true,
-        "cost": 350,
-        "science": 4,
-        "uniques": [
-            "All espionage actions are [50]% more effective",
-            "Gain [10] Science <after discovering [Radar]>"
-        ],
-        "requiredTech": "Radar",
-        "requiredBuildingInAllCities": "University"
     }
 ]
