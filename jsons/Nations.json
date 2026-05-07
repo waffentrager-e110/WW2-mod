@@ -1,10 +1,10 @@
 [
 	{
-		"name": "Aliens",
-		"leaderName": "Zyxxyz",
-		"adjective": ["alien"],
-		"startBias": ["Snow"],
-		"preferredVictoryType": "Scientific",
+		"name": "Третий Рейх",
+		"leaderName": "Адольф Гитлер",
+		"adjective": ["немец"],
+		"startBias": ["Plains"],
+		"preferredVictoryType": "Domination",
 		
 		"startIntroPart1": "We come in peace!",
 		"startIntroPart2": "This is an overpowered joke nation just as an example for the mods feature. Set Phasers to Obliterate!!",
