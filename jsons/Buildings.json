@@ -16,6 +16,7 @@
     {
         "name": "ДОТ",
         "replaces": "Arsenal",
+        "uniqueTo": "Третий Рейх",
         "cost": 150,
         "defence": 50,
         "uniques": [
@@ -30,8 +31,8 @@
         "name": "Полевой госпиталь",
         "cost": 120,
         "uniques": [
-            "Heals units in this city by [15] HP per turn",
-            "All newly-trained units in this city start with [Medic I] promotion"
+            "All units in this city heal [15] HP per turn",
+            "New units in this city start with [Medic I] promotion"
         ],
         "requiredTech": "Pharmaceuticals"
     },
@@ -50,7 +51,7 @@
         "maintenance": 3,
         "uniques": [
             "[+2] Production <from [Iron] resources>",
-            "[+15]% Production <when building [Armored] units>"
+            "[+15]% Production <when constructing [Armored] units>"
         ],
         "requiredTech": "Industrialization"
     },
@@ -64,7 +65,7 @@
         "culture": 2,
         "happiness": 2,
         "uniques": [
-            "All newly-trained units in all cities start with [Discipline I] promotion",
+            "New units in all cities start with [Discipline I] promotion",
             "[-10]% Unhappiness from [Population]"
         ],
         "requiredTech": "Combustion",
@@ -83,8 +84,8 @@
         "cost": 250,
         "production": 3,
         "uniques": [
-            "[+20]% Production <when building [Armored] units>",
-            "[-15]% Production <when building anything else>"
+            "[+20]% Production <when constructing [Armored] units>",
+            "[-15]% Production <when constructing anything else>"
         ],
         "requiredTech": "Industrialization"
     },
@@ -97,7 +98,7 @@
         "cost": 350,
         "uniques": [
             "When a [Land] unit is trained in any city, gain [25]% of its cost as Production (production overflow)",
-            "All cities gain [25]% defense"
+            "All cities gain [25]% Defense"
         ],
         "requiredTech": "Combustion",
         "requiredBuildingInAllCities": "Блиндаж"
@@ -107,7 +108,7 @@
     // УНИКАЛЬНЫЕ ЗДАНИЯ США
     // ==============================
     
-    // Пентагон (но это чудо света, так что для примера)
+    // Пентагон (чудо света)
     {
         "name": "Пентагон",
         "uniqueTo": "Америка",
@@ -127,8 +128,8 @@
         "uniqueTo": "Америка",
         "cost": 80,
         "uniques": [
-            "New [Land] units start with [20] Experience",
-            "New [Air] units start with [15] Experience"
+            "New [Land] units gain [20] Experience",
+            "New [Air] units gain [15] Experience"
         ],
         "requiredTech": "Replaceable Parts"
     },
@@ -146,9 +147,9 @@
         "science": 4,
         "uniques": [
             "All espionage actions are [50]% more effective",
-            "Gain [10] Science per turn <after discovering [Radar]>"
+            "Gain [10] Science <after discovering [Radar]>"
         ],
         "requiredTech": "Radar",
         "requiredBuildingInAllCities": "University"
     }
-		]
+]
