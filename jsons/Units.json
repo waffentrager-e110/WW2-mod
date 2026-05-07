@@ -6,11 +6,11 @@
         "replaces": "Infantry",
         "movement": 2,
         "strength": 70,
-        "cost": 50,
+        "cost": 420,
         "requiredTech": "Replaceable Parts",
         "uniques": [
-            "[+25% Strength] <in [Enemy Land]>",
-            "[-15% Strength] <in [Friendly Land]>",
+            "Strength +25% <in [Enemy Land]>",
+            "Strength -15% <in [Friendly Land]>",
             "Gains the [March] promotion"
         ],
         "attackSound": "unit_shoot_inf.ogg"
