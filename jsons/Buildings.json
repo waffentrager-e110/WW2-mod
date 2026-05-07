@@ -1,61 +1,22 @@
-[
-    {
-        "name": "Блиндаж",
-        "cost": 60,
-        "defence": 25,
-        "uniques": ["Gives a defensive bonus of [25]%"],
-        "requiredTech": "Ballistics"
-    },
-    
-    {
-        "name": "ДОТ",
-        "replaces": "Arsenal",
-        "uniqueTo": "Третий Рейх",
-        "cost": 150,
-        "defence": 50,
-        "uniques": [
-            "Gives a defensive bonus of [50]%",
-            "City must have a [Блиндаж]"
-        ],
-        "requiredTech": "Replaceable Parts"
-    },
-    
-    {
-        "name": "Полевой госпиталь",
-        "cost": 120,
-        "uniques": [
-            "All units in this city heal [15] HP per turn",
-            "New units in this city start with [Medic I] promotion"
-        ],
-        "requiredTech": "Pharmaceuticals"
-    },
-    
-    {
-        "name": "Заводы Круппа",
-        "replaces": "Factory",
-        "uniqueTo": "Третий Рейх",
-        "cost": 300,
-        "production": 4,
-        "maintenance": 3,
-        "uniques": [
-            "[+2] Production <from [Iron] resources>",
-            "[+15]% Production <when constructing [Armored] units>"
-        ],
-        "requiredTech": "Industrialization"
-    },
-    
-    {
-        "name": "Рейхсканцелярия",
-        "uniqueTo": "Третий Рейх",
-        "isNationalWonder": true,
-        "cost": 400,
-        "culture": 2,
-        "happiness": 2,
-        "uniques": [
-            "New units in all cities start with [Discipline I] promotion",
-            "[-10]% Unhappiness from [Population]"
-        ],
-        "requiredTech": "Combustion",
-        "requiredBuildingInAllCities": "Police Station"
-    }
-]
+{
+    "name": "Полевой госпиталь",
+    "cost": 120,
+    "uniques": [
+        "All units in this city heal [15] HP per turn",
+        "New units in this city start with [Medic I] promotion"
+    ],
+    "requiredTech": "Pharmaceuticals"
+},
+{
+    "name": "Заводы Круппа",
+    "replaces": "Factory",
+    "uniqueTo": "Третий Рейх",
+    "cost": 300,
+    "production": 4,
+    "maintenance": 3,
+    "uniques": [
+        "[+2] Production <from [Iron] resources>",
+        "[+15]% Production <when constructing [Armored] units>"
+    ],
+    "requiredTech": "Industrialization"
+}
