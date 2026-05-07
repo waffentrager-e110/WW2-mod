@@ -1,17 +1,16 @@
-[
-	{
-		"name": "Phasers",
-		"unitType": "Ranged",
-		"uniqueTo": "Aliens",
-		"replaces": "Machine Gun",
-		"movement": 2,
-		"strength": 90,
-		"rangedStrength": 36,
-		"range": 2,
-		"cost": 500,
-		"requiredTech": "Ballistics",
-		"requiredResource": "Uranium",
-		"promotions": ["Logistics","Accuracy I"],
-		"attackSound": "phasers"
-	}
-]
+{
+    "name": "СС-элита",
+    "unitType": "Infantry",
+    "uniqueTo": "Третий Рейх",
+    "replaces": "Infantry",
+    "movement": 2,
+    "strength": 70,
+    "cost": 420,
+    "requiredTech": "Replaceable Parts",
+    "uniques": [
+        "[+25]% Strength <when fighting in [Foreign Lands]>",
+        "[-15]% Strength <when fighting in [Friendly Lands]>",
+        "Units start with [March] promotion"
+    ],
+    "attackSound": "ss_elite.ogg"
+}
