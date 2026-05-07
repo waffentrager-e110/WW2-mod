@@ -1,16 +1,18 @@
-{
-    "name": "СС-элита",
-    "unitType": "Gunpowder",
-    "uniqueTo": "Третий Рейх",
-    "replaces": "Infantry",
-    "movement": 2,
-    "strength": 70,
-    "cost": 420,
-    "requiredTech": "Replaceable Parts",
-    "uniques": [
-        "[+25]% Strength <in [Enemy Land]>",
-        "[-15]% Strength <in [Friendly Land]>",
-        "Gains the [March] promotion"
-    ],
-    "attackSound": "unit_shoot_inf.ogg"
-}
+[
+    {
+        "name": "СС-элита",
+        "unitType": "Gunpowder",
+        "uniqueTo": "Третий Рейх",
+        "replaces": "Infantry",
+        "movement": 2,
+        "strength": 70,
+        "cost": 50,
+        "requiredTech": "Replaceable Parts",
+        "uniques": [
+            "[+25% Strength] <in [Enemy Land]>",
+            "[-15% Strength] <in [Friendly Land]>",
+            "Gains the [March] promotion"
+        ],
+        "attackSound": "unit_shoot_inf.ogg"
+    }
+]
