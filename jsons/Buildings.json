@@ -1,25 +1,154 @@
 [
-	{
-		"name": "Holodeck",
-		"replaces": "Circus Maximus",
-		"uniqueTo": "Aliens",
-		"cost": 480,
-		"happiness": 12,
-		"culture": 12,
-		"science": 12,
-		"maintenance": 96,
-		"isNationalWonder": true,
-		"requiredBuildingInAllCities": "Colosseum",
-		"requiredTech": "Horseback Riding"
-	},
-	{
-		"name": "Breeders",
-		"replaces": "Aqueduct",
-		"uniqueTo": "Aliens",
-		"cost": 80,
-		"hurryCostModifier": 160,
-		"happiness": 2,
-		"uniques": ["40% of food is carried over after a new citizen is born"],
-		"requiredTech": "Engineering"
-	}
-]
+    // ==============================
+    // ОБЩИЕ ЗДАНИЯ (доступны всем)
+    // ==============================
+    
+    // Блиндаж — дешёвое укрепление
+    {
+        "name": "Блиндаж",
+        "cost": 60,
+        "defence": 25,
+        "uniques": ["Gives a defensive bonus of [25]%"],
+        "requiredTech": "Ballistics"
+    },
+    
+    // ДОТ — долговременная огневая точка
+    {
+        "name": "ДОТ",
+        "replaces": "Arsenal",
+        "cost": 150,
+        "defence": 50,
+        "uniques": [
+            "Gives a defensive bonus of [50]%",
+            "City must have a [Блиндаж]"
+        ],
+        "requiredTech": "Replaceable Parts"
+    },
+    
+    // Военно-полевой госпиталь
+    {
+        "name": "Полевой госпиталь",
+        "cost": 120,
+        "uniques": [
+            "Heals units in this city by [15] HP per turn",
+            "All newly-trained units in this city start with [Medic I] promotion"
+        ],
+        "requiredTech": "Pharmaceuticals"
+    },
+    
+    // ==============================
+    // УНИКАЛЬНЫЕ ЗДАНИЯ ГЕРМАНИИ
+    // ==============================
+    
+    // Заводы Круппа (заменяет обычную Фабрику)
+    {
+        "name": "Заводы Круппа",
+        "replaces": "Factory",
+        "uniqueTo": "Третий Рейх",
+        "cost": 300,
+        "production": 4,
+        "maintenance": 3,
+        "uniques": [
+            "[+2] Production <from [Iron] resources>",
+            "[+15]% Production <when building [Armored] units>"
+        ],
+        "requiredTech": "Industrialization"
+    },
+    
+    // Рейхсканцелярия (национальное чудо)
+    {
+        "name": "Рейхсканцелярия",
+        "uniqueTo": "Третий Рейх",
+        "isNationalWonder": true,
+        "cost": 400,
+        "culture": 2,
+        "happiness": 2,
+        "uniques": [
+            "All newly-trained units in all cities start with [Discipline I] promotion",
+            "[-10]% Unhappiness from [Population]"
+        ],
+        "requiredTech": "Combustion",
+        "requiredBuildingInAllCities": "Police Station"
+    },
+    
+    // ==============================
+    // УНИКАЛЬНЫЕ ЗДАНИЯ СССР
+    // ==============================
+    
+    // Завод Уралмаш
+    {
+        "name": "Уралмаш",
+        "replaces": "Factory",
+        "uniqueTo": "СССР",
+        "cost": 250,
+        "production": 3,
+        "uniques": [
+            "[+20]% Production <when building [Armored] units>",
+            "[-15]% Production <when building anything else>"
+        ],
+        "requiredTech": "Industrialization"
+    },
+    
+    // Комитет обороны (национальное чудо)
+    {
+        "name": "ГКО",
+        "uniqueTo": "СССР",
+        "isNationalWonder": true,
+        "cost": 350,
+        "uniques": [
+            "When a [Land] unit is trained in any city, gain [25]% of its cost as Production (production overflow)",
+            "All cities gain [25]% defense"
+        ],
+        "requiredTech": "Combustion",
+        "requiredBuildingInAllCities": "Блиндаж"
+    },
+    
+    // ==============================
+    // УНИКАЛЬНЫЕ ЗДАНИЯ США
+    // ==============================
+    
+    // Пентагон (но это чудо света, так что для примера)
+    {
+        "name": "Пентагон",
+        "uniqueTo": "Америка",
+        "isWonder": true,
+        "cost": 600,
+        "uniques": [
+            "All units gain [15]% Strength",
+            "[-25]% Gold cost for upgrading units"
+        ],
+        "requiredTech": "Radar"
+    },
+    
+    // Военная база
+    {
+        "name": "Военная база",
+        "replaces": "Barracks",
+        "uniqueTo": "Америка",
+        "cost": 80,
+        "uniques": [
+            "New [Land] units start with [20] Experience",
+            "New [Air] units start with [15] Experience"
+        ],
+        "requiredTech": "Replaceable Parts"
+    },
+    
+    // ==============================
+    // УНИКАЛЬНЫЕ ЗДАНИЯ ВЕЛИКОБРИТАНИИ
+    // ==============================
+    
+    // Операционная комната (Station X)
+    {
+        "name": "Блетчли-парк",
+        "uniqueTo": "Англия",
+        "isNationalWonder": true,
+        "cost": 350,
+        "science": 4,
+        "uniques": [
+            "All espionage actions are [50]% more effective",
+            "Gain [10] Science per turn <after discovering [Radar]>"
+        ],
+        "requiredTech": "Radar",
+        "requiredBuildingInAllCities": "University"
+    }
+		]
