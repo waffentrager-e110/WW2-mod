@@ -1,16 +1,18 @@
-{
-    "name": "СС-элита",
-    "unitType": "Infantry",
-    "uniqueTo": "Третий Рейх",
-    "replaces": "Infantry",
-    "movement": 2,
-    "strength": 70,
-    "cost": 420,
-    "requiredTech": "Replaceable Parts",
-    "uniques": [
-        "[+25]% Strength <when fighting in [Foreign Lands]>",
-        "[-15]% Strength <when fighting in [Friendly Lands]>",
-        "Units start with [March] promotion"
-    ],
-    "attackSound": "unit_shoot_inf.ogg"
-}
+[
+    {
+        "name": "СС-элита",
+        "unitType": "Infantry",
+        "uniqueTo": "Третий Рейх",
+        "replaces": "Infantry",
+        "movement": 2,
+        "strength": 70,
+        "cost": 420,
+        "requiredTech": "Replaceable Parts",
+        "uniques": [
+            "[+25]% Strength <when fighting in [Foreign Lands]>",
+            "[-15]% Strength <when fighting in [Friendly Lands]>",
+            "Units start with [March] promotion"
+        ],
+        "attackSound": "unit_shoot_inf.ogg"
+    }
+]
