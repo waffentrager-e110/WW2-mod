@@ -12,5 +12,5 @@
         "[-15]% Strength <when fighting in [Friendly Lands]>",
         "Units start with [March] promotion"
     ],
-    "attackSound": "ss_elite.ogg"
+    "attackSound": "unit_shoot_inf.ogg"
 }
