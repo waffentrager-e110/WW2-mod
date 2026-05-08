@@ -1,145 +1,183 @@
 [
-    // ==============================
-    // ОБЩИЕ ЗДАНИЯ (доступны всем)
-    // ==============================
-    
     {
-        "name": "Блиндаж",
-        "cost": 60,
-        "defence": 25,
-        "uniques": ["Gives a defensive bonus of [25]%"],
-        "requiredTech": "Ballistics"
-    },
-    
-    {
-        "name": "ДОТ",
-        "replaces": "Arsenal",
-        "uniqueTo": "Третий Рейх",
-        "cost": 150,
-        "defence": 50,
+        "name": "Reichskommissariat Verwaltung",
+        "replaces": "Courthouse",
+        "uniqueTo": "Рейхскомиссариат Остланд",
+        "maintenance": 0,
+        "hurryCostModifier": 50,
         "uniques": [
-            "Gives a defensive bonus of [50]%",
-            "City must have a [Блиндаж]"
+            "Removes extra unhappiness from annexed cities",
+            "Can only be built <in [Annexed] cities>",
+            "Gold +2 per [1] population [in this city]",
+            "Production +1 per [1] population [in this city]",
+            "[-50]% Culture [in this city]",
+            "[-50]% Science [in this city]",
+            "[-50]% growth [in this city]"
         ],
-        "requiredTech": "Replaceable Parts"
+        "requiredTech": "Mathematics"
     },
-    
+
     {
-        "name": "Полевой госпиталь",
-        "cost": 120,
-        "uniques": [
-            "All units in this city heal [15] HP per turn",
-            "New units in this city start with [Medic I] promotion"
-        ],
-        "requiredTech": "Pharmaceuticals"
-    },
-    
-    // ==============================
-    // УНИКАЛЬНЫЕ ЗДАНИЯ ГЕРМАНИИ
-    // ==============================
-    
-    {
-        "name": "Заводы Круппа",
+        "name": "Assembly Plant",
         "replaces": "Factory",
-        "uniqueTo": "Третий Рейх",
-        "cost": 300,
-        "production": 4,
+        "uniqueTo": "Соединённые Штаты Америки",
+        "cost": 360,
+        "production": 5,
+        "percentStatBonus": {"production": 10},
+        "specialistSlots": {"Engineer": 2},
+        "requiredBuilding": "Workshop",
         "maintenance": 3,
-        "uniques": [
-            "Production +2 <from [Iron] resources>",
-            "Production +15% <when constructing [Armored] units>"
-        ],
-        "requiredTech": "Industrialization"
-    },
-    
-    {
-        "name": "Рейхсканцелярия",
-        "uniqueTo": "Третий Рейх",
-        "isNationalWonder": true,
-        "cost": 400,
-        "culture": 2,
-        "happiness": 2,
-        "uniques": [
-            "New units in all cities start with [Discipline II] promotion",
-            "Unhappiness -10% <from [Population]>"
-        ],
-        "requiredTech": "Combustion",
-        "requiredBuildingInAllCities": "Police Station"
-    },
-    
-    // ==============================
-    // УНИКАЛЬНЫЕ ЗДАНИЯ СССР
-    // ==============================
-    
-    {
-        "name": "Уралмаш",
-        "replaces": "Factory",
-        "uniqueTo": "СССР",
-        "cost": 250,
-        "production": 3,
+        "requiredResource": "Coal",
+        "requiredTech": "Industrialization",
         "uniques": [
             "Production +20% <when constructing [Armored] units>",
-            "Production -15% <when constructing anything else>"
-        ],
-        "requiredTech": "Industrialization"
+            "Production +20% <when constructing [Siege] units>",
+            "Production +20% <when constructing [Air] units>"
+        ]
     },
     
     {
-        "name": "ГКО",
-        "uniqueTo": "СССР",
-        "isNationalWonder": true,
-        "cost": 350,
+        "name": "Naval Dockyard",
+        "replaces": "Seaport",
+        "uniqueTo": "Соединённое Королевство",
+        "hurryCostModifier": 25,
+        "production": 1,
+        "maintenance": 3,
+        "requiredBuilding": "Harbor",
         "uniques": [
-            "When a [Land] unit is trained in any city, gain [25]% of its cost as Production (production overflow)",
-            "All cities gain [25]% Defense"
+            "Must be next to [Coast]",
+            "Production +33% <when constructing [Water] units>",
+            "Production +1, Gold +1 from [Water resource] tiles [in this city]"
         ],
-        "requiredTech": "Combustion",
-        "requiredBuildingInAllCities": "Блиндаж"
-    },
-    
-    // ==============================
-    // УНИКАЛЬНЫЕ ЗДАНИЯ США
-    // ==============================
-    
-    {
-        "name": "Пентагон",
-        "uniqueTo": "Америка",
-        "isWonder": true,
-        "cost": 600,
-        "uniques": [
-            "All units gain +15% Strength",
-            "Gold cost -25% <for upgrading units>"
-        ],
-        "requiredTech": "Radar"
+        "requiredTech": "Navigation"
     },
     
     {
-        "name": "Военная база",
-        "replaces": "Barracks",
-        "uniqueTo": "Америка",
-        "cost": 80,
+        "name": "Cafe",
+        "replaces": "Broadcast Tower",
+        "uniqueTo": "Французская Республика",
+        "culture": 3,
+        "food": 2,
+        "percentStatBonus": {"culture": 33},
+        "requiredBuilding": "Museum",
+        "requiredTech": "Radio",
         "uniques": [
-            "New [Land] units gain [20] Experience",
-            "New [Air] units gain [15] Experience"
-        ],
-        "requiredTech": "Replaceable Parts"
+            "Gold +2, Culture +2 from every [Wonder] <in this city>",
+            "Destroyed when the city is captured"
+        ]
     },
     
-    // ==============================
-    // УНИКАЛЬНЫЕ ЗДАНИЯ ВЕЛИКОБРИТАНИИ
-    // ==============================
+    {
+        "name": "Centrum Wyszkolenia",
+        "replaces": "Military Academy",
+        "uniqueTo": "Республика Польша",
+        "maintenance": 1,
+        "requiredBuilding": "Armory",
+        "uniques": [
+            "New [Military] units start with [15] XP [in this city]",
+            "New [Gunpowder] units start with [15] XP [in this city]",
+            "Culture +2, Production +2 [in this city] <with a garrison>",
+            "Destroyed when the city is captured"
+        ],
+        "requiredTech": "Military Science"
+    },
     
     {
-        "name": "Блетчли-парк",
-        "uniqueTo": "Англия",
-        "isNationalWonder": true,
-        "cost": 350,
-        "science": 4,
+        "name": "Casa del Pueblo",
+        "replaces": "Library",
+        "uniqueTo": "Испанская Республика",
+        "hurryCostModifier": 25,
+        "maintenance": 1,
         "uniques": [
-            "All espionage actions are [50]% more effective",
-            "Gain 10 Science <after discovering [Radar]>"
+            "Science +1 per [2] population [in this city]",
+            "Great Person generation +25% [in this city]",
+            "Yield from every [Great Improvement] +50% <in this city>"
         ],
-        "requiredTech": "Radar",
-        "requiredBuildingInAllCities": "University"
+        "requiredTech": "Writing"
+    },
+    
+    {
+        "name": "Škoda Works",
+        "replaces": "Factory",
+        "uniqueTo": "Чехословакия",
+        "cost": 360,
+        "production": 4,
+        "percentStatBonus": {"production": 10},
+        "specialistSlots": {"Engineer": 1},
+        "requiredBuilding": "Workshop",
+        "maintenance": 3,
+        "requiredTech": "Industrialization",
+        "uniques": [
+            "Comment [Coal not required]",
+            "Production +2, Gold +1 from [Iron] tiles [in this city]",
+            "Production +2, Gold +1 from [Coal] tiles [in this city]",
+            "Production +2, Gold +1 from [Aluminum] tiles [in this city]",
+            "Production +2, Gold +1 from [Oil] tiles [in this city]"
+        ]
+    },
+    
+    {
+        "name": "Swiss Bank",
+        "replaces": "Bank",
+        "uniqueTo": "Швейцария",
+        "gold": 4,
+        "culture": 2,
+        "specialistSlots": {"Merchant": 1},
+        "hurryCostModifier": 15,
+        "percentStatBonus": {"gold": 25},
+        "requiredBuilding": "Market",
+        "requiredTech": "Banking"
+    },
+    
+    {
+        "name": "Liman",
+        "replaces": "Harbor",
+        "uniqueTo": "Турция",
+        "cost": 120,
+        "maintenance": 2,
+        "hurryCostModifier": 25,
+        "uniques": [
+            "Production +1 from [Water resource] tiles [in this city]",
+            "Gold +2 from [Strategic resource] tiles [in this city]",
+            "Gold +2 <in cities connected to the capital>",
+            "Connects trade routes over water",
+            "Must be next to [Coast]"
+        ],
+        "requiredTech": "Compass"
+    },
+    
+    // Substitute Buildings
+    {
+        "name": "Frontier Outpost",
+        "replaces": "Armory",
+        "uniqueTo": "Соединённые Штаты Америки",
+        "hurryCostModifier": 25,
+        "maintenance": 1,
+        "requiredBuilding": "Barracks",
+        "uniques": [
+            "[-25]% Culture cost of natural border growth [in this city]",
+            "Production +25% <when constructing [Settler] units>",
+            "New [Military] units start with [15] XP [in this city]",
+            "Destroyed when the city is captured"
+        ],
+        "requiredTech": "Steel"
+    },
+    
+    {
+        "name": "Dojo",
+        "replaces": "Armory",
+        "uniqueTo": "Японская Империя",
+        "cost": 160,
+        "hurryCostModifier": 25,
+        "culture": 1,
+        "maintenance": 1,
+        "requiredBuilding": "Barracks",
+        "uniques": [
+            "New [Military] units start with [15] XP [in this city]",
+            "All newly-trained [Melee] units [in this city] receive the [Drill I] promotion",
+            "All newly-trained [Gunpowder] units [in this city] receive the [Drill I] promotion",
+            "Destroyed when the city is captured"
+        ],
+        "requiredTech": "Metal Casting"
     }
 ]
