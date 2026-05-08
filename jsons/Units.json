@@ -1,433 +1,470 @@
 [
-	{
-		"name": "Tiger I",
-		"unitType": "Armored",
-		"uniqueTo": "German Reich",
-		"replaces": "Panzer"
-		"replaces": "Tank",
-		"movement": 4,
-		"strength": 80,
-		"cost": 395,
-		"requiredTech": "Combined Arms",
-		"requiredResource": "Oil",
-		"upgradesTo": "Modern Armor",
-		"promotions": ["Shock I","Blitz"], 
-		"uniques": ["Can move after attacking","No defensive terrain bonus"],
-		"attackSound": "tankshot"
-	},
-	
-	{
-		"name": "Ju 87",
-		"unitType": "Bomber",
-		"uniqueTo": "German Reich",
-		"replaces": "Bomber",
-		"movement": 1,
-		"strength": 70,
-		"rangedStrength": 70,
-		"range": 10,
-		"cost": 375,
-		"requiredTech": "Radar",
-		"requiredResource": "Oil",
-		"upgradesTo": "Stealth Bomber",
-		"promotions": ["Bombardment I", "Ambush I",],
-		"attackSound": "bombing"
-	},
-	
-	{
-		"name": "T-34",
-		"unitType": "Armored",
-		"uniqueTo": "Soviet Union",
-		"replaces": "Tank",
-		"movement": 5,
-		"strength": 70,
-		"cost": 325,
-		"requiredTech": "Combined Arms",
-		"requiredResource": "Oil",
-		"upgradesTo": "Modern Armor",
-		"uniques": ["Can move after attacking", "Can move immediately once bought", "No defensive terrain bonus"],
-		"attackSound": "tankshot"
-	},
-	
-	{
-		"name": "BM-13 'Katyusha'",
-		"unitType": "Siege",
-		"uniqueTo": "Soviet Union",
-		"replaces": "Rocket Artillery",
-		"movement": 2,
-		"strength": 30,
-		"rangedStrength": 50,
-		"range": 3,
-		"cost": 375,
-		"requiredTech": "Rocketry",
-		"uniques": ["Comment [Aluminum not required]","[+150]% Strength <vs cities> <when attacking>","[+50]% Strength <vs [Gunpowder] units> <when attacking>","No defensive terrain bonus","Ranged attacks may be performed over obstacles","[-1] Sight"],
-		"attackSound": "artillery"
-	},
-	
-	{
-		"name": "B17",
-		"unitType": "Bomber",
-		"replaces": "Bomber",
-		"uniqueTo": "United States of America",
-		"movement": 1,
-		"strength": 70,
-		"rangedStrength": 70,
-		"range": 10,
-		"cost": 375,
-		"requiredTech": "Radar",
-		"requiredResource": "Oil",
-		"promotions": ["Evasion", "Siege I"],
-		"upgradesTo": "Stealth Bomber",
-		"attackSound": "bombing"
-	},
-	
-	{
-		"name": "Supermarine Spitfire",
-		"unitType": "Fighter",
-		"replaces": "Fighter",
-		"uniqueTo": "United Kingdom",
-		"movement": 1,
-		"strength": 50,
-		"rangedStrength": 50,
-		"range": 8,
-		"interceptRange": 8,
-		"cost": 375,
-		"requiredTech": "Radar",
-		"requiredResource": "Oil",
-		"upgradesTo": "Jet Fighter",
-		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
-		"promotions": ["[Supermarine Spitfire] ability", "Interception I"],
-		"attackSound": "machinegun"
-	},
-	
-	{
-		"name": "Char B1",
-		"unitType": "Armored",
-		"uniqueTo": "French Republic",
-		"replaces": "Tank",
-		"movement": 5,
-		"strength": 70,
-		"cost": 375,
-		"requiredTech": "Combined Arms",
-		"requiredResource": "Oil",
-		"upgradesTo": "Modern Armor",
-		"uniques": ["Can move after attacking",
-		"[+33]% Strength <when defending>"
-		"No defensive terrain bonus"],
-		"promotions": ["Shock I"]
-		"attackSound": "tankshot"
-	},
-	
-	{
-		"name": "Black Brigade Infantry",
-		"unitType": "Gunpowder",
-		"replaces": "Infantry",
-		"uniqueTo": "Republic of Poland",
-		"movement": 2,
-		"strength": 75,
-		"cost": 375,
-		"requiredTech": "Plastics",
-		"upgradesTo": "Mechanized Infantry",
-		"promotions": ["[Black Brigade Infantry] ability"]
-		"obsoleteTech": "Mobile Tactics",
-		"attackSound": "shot"
-	},
-	
-	{
-		"name": "SS Panzergrenadiers",
-		"unitType": "Gunpowder",
-		"replaces": "Infantry",
-		"uniqueTo": "Reichskommissariate des Ostens",
-		"movement": 3,
-		"strength": 75,
-		"cost": 395,
-		"requiredTech": "Plastics",
-		"upgradesTo": "Mechanized Infantry",
-		"uniques": ["[+33]% maintenance costs"],
-		"promotions": ["[SS Panzergrenadiers] ability"]		
-		"obsoleteTech": "Mobile Tactics",
-		"attackSound": "shot"
-	},
-	
-	{
-		"name": "Zero",
-		"unitType": "Fighter",
-		"replaces": "Fighter",
-		"uniqueTo": "Empire of Japan",
-		"movement": 1,
-		"strength": 45,
-		"rangedStrength": 45,
-		"range": 8,
-		"interceptRange": 8,
-		"cost": 375,
-		"requiredTech": "Radar",
-		"upgradesTo": "Jet Fighter",
-		"uniques": ["[100]% chance to intercept air attacks", 
-		"[+150]% Strength <vs [Bomber] units>", 
-		"[+150]% Strength <vs [Helicopter] units>",
-		"Comment [Can choose to perform kamikaze strikes on enemy units through promotions]"],
-		"promotions": ["[Zero] ability"],
-		"attackSound": "machinegun"
-	},
-	
-	{
-		"name": "Yamato-Class",
-		"unitType": "Ranged Water",
-		"replaces": "Battleship",
-		"uniqueTo": "Empire of Japan",
-		"movement": 5,
-		"strength": 65,
-		"rangedStrength": 65,
-		"range": 3,
-		"cost": 375,
-		"requiredResource": "Oil",
-		"requiredTech": "Electronics",
-		"uniques": ["[+33]% Strength <vs [Melee Water] units>",
-		"[+33]% Strength <vs [Ranged Water] units>",
-		"[-33]% Strength <vs [Bomber] units>"
-		"[-50]% Strength <vs [Submarine] units> <when defending>"],
-		"promotions": ["Indirect Fire"],
-		"attackSound": "shipguns"
-	},
-	
-	{
-		"name": "Alpini",
-		"unitType": "Gunpowder",
-		"replaces": "Marine",
-		"uniqueTo": "Kingdom of Italy",
-		"movement": 2,
-		"strength": 70,
-		"cost": 400,
-		"requiredTech": "Pharmaceuticals",
-		"promotions": ["[Alpini] ability"],
-		"attackSound": "shot"
-	},
-	
-	{
-		"name": "Macchi C.202 Folgore",
-		"unitType": "Fighter",
-		"replaces": "Fighter",
-		"uniqueTo": "Kingdom of Italy",
-		"movement": 1,
-		"strength": 45,
-		"rangedStrength": 45,
-		"range": 8,
-		"interceptRange": 8,
-		"cost": 375,
-		"requiredTech": "Radar",
-		"requiredResource": "Oil",
-		"upgradesTo": "Jet Fighter",
-		"uniques": ["[100]% chance to intercept air attacks", 
-		"[+150]% Strength <vs [Bomber] units>", 
-		"[+150]% Strength <vs [Helicopter] units>"],
-		"promotions": ["Dogfighting I", "Operational Range"],
-		"attackSound": "machinegun"
-	},
-	
-	{
-		"name": "Turan",
-		"unitType": "Armored",
-		"replaces": "Tank",
-		"uniqueTo": "Hungary",
-		"movement": 5,
-		"strength": 63,
-		"cost": 300,
-		"requiredTech": "Combined Arms",
-		"requiredResource": "Oil",
-		"upgradesTo": "Modern Armor",
-		"uniques": ["Can move after attacking",
-		"No defensive terrain bonus",
-		"[+15]% Strength <in tiles adjacent to [City center] tiles>"],
-		"promotions": ["[Turan] ability"]
-		"attackSound": "tankshot"
-	},
-	
-	{
-		"name": "Szent László Infantry",
-		"unitType": "Gunpowder",
-		"replaces": "Infantry",
-		"uniqueTo": "Hungary",
-		"movement": 2,
-		"strength": 72,
-		"cost": 375,
-		"requiredTech": "Plastics",
-		"upgradesTo": "Mechanized Infantry",
-		"obsoleteTech": "Mobile Tactics",
-		"uniques": ["[+15]% Strength <when defending>"
-		"[+5]% Strength <when fighting in [Rough terrain] tiles>",
-		"No damage penalty for wounded units"]
-		"attackSound": "shot"
-	},
-	
-//Non-aligned nations
-	//China
-	{
-		"name": "Central Army Infantry",
-		"unitType": "Gunpowder",
-		"replaces": "Infantry",
-		"uniqueTo": "Republic of China",
-		"movement": 2,
-		"strength": 65,
-		"cost": 335,
-		"requiredTech": "Plastics",
-		"upgradesTo": "Mechanized Infantry",
-		"obsoleteTech": "Mobile Tactics",
-		"attackSound": "shot"
-	},
+    // ==============================
+    // AXIS POWERS (Страны Оси)
+    // ==============================
+    
+    // Germany (Германия)
+    {
+        "name": "Tiger I",
+        "unitType": "Armored",
+        "uniqueTo": "Германский Рейх",
+        "replaces": "Panzer",
+        "movement": 4,
+        "strength": 80,
+        "cost": 395,
+        "requiredTech": "Combined Arms",
+        "requiredResource": "Oil",
+        "upgradesTo": "Modern Armor",
+        "promotions": ["Shock I", "Blitz"],
+        "uniques": ["Can move after attacking", "No defensive terrain bonus"],
+        "attackSound": "tankshot"
+    },
+    
+    {
+        "name": "Ju 87 Stuka",
+        "unitType": "Bomber",
+        "uniqueTo": "Германский Рейх",
+        "replaces": "Bomber",
+        "movement": 1,
+        "strength": 70,
+        "rangedStrength": 70,
+        "range": 10,
+        "cost": 375,
+        "requiredTech": "Radar",
+        "requiredResource": "Oil",
+        "upgradesTo": "Stealth Bomber",
+        "promotions": ["Bombardment I", "Ambush I"],
+        "attackSound": "bombing"
+    },
+    
+    // Soviet Union (СССР)
+    {
+        "name": "Т-34",
+        "unitType": "Armored",
+        "uniqueTo": "Советский Союз",
+        "replaces": "Tank",
+        "movement": 5,
+        "strength": 70,
+        "cost": 325,
+        "requiredTech": "Combined Arms",
+        "requiredResource": "Oil",
+        "upgradesTo": "Modern Armor",
+        "uniques": ["Can move after attacking", "Can move immediately once bought", "No defensive terrain bonus"],
+        "attackSound": "tankshot"
+    },
+    
+    {
+        "name": "БМ-13 'Катюша'",
+        "unitType": "Siege",
+        "uniqueTo": "Советский Союз",
+        "replaces": "Rocket Artillery",
+        "movement": 2,
+        "strength": 30,
+        "rangedStrength": 50,
+        "range": 3,
+        "cost": 375,
+        "requiredTech": "Rocketry",
+        "uniques": [
+            "Comment [Алюминий не требуется]",
+            "[+150]% Strength <vs cities> <when attacking>",
+            "[+50]% Strength <vs [Gunpowder] units> <when attacking>",
+            "No defensive terrain bonus",
+            "Ranged attacks may be performed over obstacles",
+            "[-1] Sight"
+        ],
+        "attackSound": "artillery"
+    },
+    
+    // USA (США)
+    {
+        "name": "B-17 Flying Fortress",
+        "unitType": "Bomber",
+        "uniqueTo": "Соединённые Штаты Америки",
+        "replaces": "Bomber",
+        "movement": 1,
+        "strength": 70,
+        "rangedStrength": 70,
+        "range": 10,
+        "cost": 375,
+        "requiredTech": "Radar",
+        "requiredResource": "Oil",
+        "promotions": ["Evasion", "Siege I"],
+        "upgradesTo": "Stealth Bomber",
+        "attackSound": "bombing"
+    },
+    
+    // United Kingdom (Великобритания)
+    {
+        "name": "Supermarine Spitfire",
+        "unitType": "Fighter",
+        "uniqueTo": "Соединённое Королевство",
+        "replaces": "Fighter",
+        "movement": 1,
+        "strength": 50,
+        "rangedStrength": 50,
+        "range": 8,
+        "interceptRange": 8,
+        "cost": 375,
+        "requiredTech": "Radar",
+        "requiredResource": "Oil",
+        "upgradesTo": "Jet Fighter",
+        "uniques": [
+            "[100]% chance to intercept air attacks",
+            "[+150]% Strength <vs [Bomber] units>",
+            "[+150]% Strength <vs [Helicopter] units>"
+        ],
+        "promotions": ["Interception I"],
+        "attackSound": "machinegun"
+    },
+    
+    // France (Франция)
+    {
+        "name": "Char B1",
+        "unitType": "Armored",
+        "uniqueTo": "Французская Республика",
+        "replaces": "Tank",
+        "movement": 5,
+        "strength": 70,
+        "cost": 375,
+        "requiredTech": "Combined Arms",
+        "requiredResource": "Oil",
+        "upgradesTo": "Modern Armor",
+        "uniques": ["Can move after attacking", "[+33]% Strength <when defending>", "No defensive terrain bonus"],
+        "promotions": ["Shock I"],
+        "attackSound": "tankshot"
+    },
+    
+    // Poland (Польша)
+    {
+        "name": "Black Brigade Infantry",
+        "unitType": "Gunpowder",
+        "uniqueTo": "Республика Польша",
+        "replaces": "Infantry",
+        "movement": 2,
+        "strength": 75,
+        "cost": 375,
+        "requiredTech": "Plastics",
+        "upgradesTo": "Mechanized Infantry",
+        "promotions": ["Morale"],
+        "obsoleteTech": "Mobile Tactics",
+        "attackSound": "shot"
+    },
+    
+    // Reichskommissariate des Ostens (Рейхскомиссариат Остланд)
+    {
+        "name": "SS Panzergrenadiers",
+        "unitType": "Gunpowder",
+        "uniqueTo": "Рейхскомиссариат Остланд",
+        "replaces": "Infantry",
+        "movement": 3,
+        "strength": 75,
+        "cost": 395,
+        "requiredTech": "Plastics",
+        "upgradesTo": "Mechanized Infantry",
+        "uniques": ["[+33]% maintenance costs"],
+        "promotions": ["Morale"],
+        "obsoleteTech": "Mobile Tactics",
+        "attackSound": "shot"
+    },
+    
+    // Japan (Япония)
+    {
+        "name": "A6M Zero",
+        "unitType": "Fighter",
+        "uniqueTo": "Японская Империя",
+        "replaces": "Fighter",
+        "movement": 1,
+        "strength": 45,
+        "rangedStrength": 45,
+        "range": 8,
+        "interceptRange": 8,
+        "cost": 375,
+        "requiredTech": "Radar",
+        "upgradesTo": "Jet Fighter",
+        "uniques": [
+            "[100]% chance to intercept air attacks",
+            "[+150]% Strength <vs [Bomber] units>",
+            "[+150]% Strength <vs [Helicopter] units>"
+        ],
+        "promotions": ["Dogfighting I"],
+        "attackSound": "machinegun"
+    },
+    
+    {
+        "name": "Yamato-class",
+        "unitType": "Ranged Water",
+        "uniqueTo": "Японская Империя",
+        "replaces": "Battleship",
+        "movement": 5,
+        "strength": 65,
+        "rangedStrength": 65,
+        "range": 3,
+        "cost": 375,
+        "requiredResource": "Oil",
+        "requiredTech": "Electronics",
+        "uniques": [
+            "[+33]% Strength <vs [Melee Water] units>",
+            "[+33]% Strength <vs [Ranged Water] units>",
+            "[-33]% Strength <vs [Bomber] units>",
+            "[-50]% Strength <vs [Submarine] units> <when defending>"
+        ],
+        "promotions": ["Indirect Fire"],
+        "attackSound": "shipguns"
+    },
+    
+    // Italy (Италия)
+    {
+        "name": "Alpini",
+        "unitType": "Gunpowder",
+        "uniqueTo": "Королевство Италия",
+        "replaces": "Marine",
+        "movement": 2,
+        "strength": 70,
+        "cost": 400,
+        "requiredTech": "Pharmaceuticals",
+        "promotions": ["Morale"],
+        "attackSound": "shot"
+    },
+    
+    {
+        "name": "Macchi C.202 Folgore",
+        "unitType": "Fighter",
+        "uniqueTo": "Королевство Италия",
+        "replaces": "Fighter",
+        "movement": 1,
+        "strength": 45,
+        "rangedStrength": 45,
+        "range": 8,
+        "interceptRange": 8,
+        "cost": 375,
+        "requiredTech": "Radar",
+        "requiredResource": "Oil",
+        "upgradesTo": "Jet Fighter",
+        "uniques": [
+            "[100]% chance to intercept air attacks",
+            "[+150]% Strength <vs [Bomber] units>",
+            "[+150]% Strength <vs [Helicopter] units>"
+        ],
+        "promotions": ["Dogfighting I", "Operational Range"],
+        "attackSound": "machinegun"
+    },
+    
+    // Hungary (Венгрия)
+    {
+        "name": "Turan",
+        "unitType": "Armored",
+        "uniqueTo": "Венгрия",
+        "replaces": "Tank",
+        "movement": 5,
+        "strength": 63,
+        "cost": 300,
+        "requiredTech": "Combined Arms",
+        "requiredResource": "Oil",
+        "upgradesTo": "Modern Armor",
+        "uniques": ["Can move after attacking", "No defensive terrain bonus", "[+15]% Strength <in tiles adjacent to [City Center] tiles>"],
+        "promotions": ["Shock I"],
+        "attackSound": "tankshot"
+    },
+    
+    {
+        "name": "Szent László Infantry",
+        "unitType": "Gunpowder",
+        "uniqueTo": "Венгрия",
+        "replaces": "Infantry",
+        "movement": 2,
+        "strength": 72,
+        "cost": 375,
+        "requiredTech": "Plastics",
+        "upgradesTo": "Mechanized Infantry",
+        "obsoleteTech": "Mobile Tactics",
+        "uniques": ["[+15]% Strength <when defending>", "[+5]% Strength <when fighting in [Rough terrain] tiles>", "No damage penalty for wounded units"],
+        "attackSound": "shot"
+    },
 
-	{
-		"name": "'Flying Tigers'",
-		"unitType": "Fighter",
-		"replaces": "Fighter",
-		"uniqueTo": "Republic of China",
-		"movement": 1,
-		"strength": 45,
-		"rangedStrength": 45,
-		"range": 8,
-		"interceptRange": 8,
-		"cost": 395,
-		"requiredTech": "Radar",
-		"requiredResource": "Oil",
-		"upgradesTo": "Jet Fighter",
-		"uniques": ["[100]% chance to intercept air attacks", 
-		"[+150]% Strength <vs [Bomber] units>", 
-		"[+150]% Strength <vs [Helicopter] units>",
-		"[+33]% Strength <vs [Land] units>"],
-		"promotions": ["Operational Range"],
-		"attackSound": "machinegun"
-	},
-	
-	{
-		"name": "Regulares",
-		"unitType": "Gunpowder",
-		"replaces": "Infantry",
-		"uniqueTo": "Spanish State",
-		"movement": 2,
-		"strength": 65,
-		"cost": 375,
-		"requiredTech": "Plastics",
-		"upgradesTo": "Mechanized Infantry",
-		"uniques": ["[+20]% Strength <when fighting in [Hill] tiles>",
-		"[+20]% Strength <when fighting in [Desert] tiles>"]
-		"promotions": ["Morale"],
-		"obsoleteTech": "Mobile Tactics",
-		"attackSound": "shot"
-	},
-	
-	{
-		"name": "Condor Legion",
-		"unitType": "Bomber",
-		"replaces": "Great War Bomber",
-		"uniqueTo": "Spanish State",
-		"movement": 1,
-		"strength": 50,
-		"rangedStrength": 50,
-		"range": 6,
-		"cost": 325,
-		"requiredTech": "Flight",
-		"requiredResource": "Oil",
-		"upgradesTo": "Bomber",
-		"uniques": ["[+33]% Strength <when fighting in [Foreign] tiles>"]
-		"promotions": ["Siege I"]
-		"obsoleteTech": "Radar",
-		"attackSound": "bombing"
-	},
-	
-	{
-		"name": "Brigadas Internacionales",
-		"unitType": "Gunpowder",
-		"replaces": "Infantry",
-		"uniqueTo": "Spanish Republic",
-		"movement": 2,
-		"strength": 70,
-		"cost": 375,
-		"requiredTech": "Plastics",
-		"upgradesTo": "Mechanized Infantry",
-		"uniques": ["[+15]% Strength <when fighting in [Foreign] tiles>",
-		"[+15]% Strength <when adjacent to a [Spanish Republic] unit>",
-		"Can move immediately once bought"
+    // ==============================
+    // NON-ALIGNED (Неприсоединившиеся)
+    // ==============================
+    
+    // China (Китай)
+    {
+        "name": "Central Army Infantry",
+        "unitType": "Gunpowder",
+        "uniqueTo": "Республика Китай",
+        "replaces": "Infantry",
+        "movement": 2,
+        "strength": 65,
+        "cost": 335,
+        "requiredTech": "Plastics",
+        "upgradesTo": "Mechanized Infantry",
+        "obsoleteTech": "Mobile Tactics",
+        "attackSound": "shot"
+    },
+
+    {
+        "name": "Flying Tigers",
+        "unitType": "Fighter",
+        "uniqueTo": "Республика Китай",
+        "replaces": "Fighter",
+        "movement": 1,
+        "strength": 45,
+        "rangedStrength": 45,
+        "range": 8,
+        "interceptRange": 8,
+        "cost": 395,
+        "requiredTech": "Radar",
+        "requiredResource": "Oil",
+        "upgradesTo": "Jet Fighter",
+        "uniques": [
+            "[100]% chance to intercept air attacks",
+            "[+150]% Strength <vs [Bomber] units>",
+            "[+150]% Strength <vs [Helicopter] units>",
+            "[+33]% Strength <vs [Land] units>"
+        ],
+        "promotions": ["Operational Range"],
+        "attackSound": "machinegun"
+    },
+    
+    // Spain (Испания)
+    {
+        "name": "Regulares",
+        "unitType": "Gunpowder",
+        "uniqueTo": "Испанское Государство",
+        "replaces": "Infantry",
+        "movement": 2,
+        "strength": 65,
+        "cost": 375,
+        "requiredTech": "Plastics",
+        "upgradesTo": "Mechanized Infantry",
+        "uniques": ["[+20]% Strength <when fighting in [Hill] tiles>", "[+20]% Strength <when fighting in [Desert] tiles>"],
+        "promotions": ["Morale"],
+        "obsoleteTech": "Mobile Tactics",
+        "attackSound": "shot"
+    },
+    
+    {
+        "name": "Condor Legion",
+        "unitType": "Bomber",
+        "uniqueTo": "Испанское Государство",
+        "replaces": "Great War Bomber",
+        "movement": 1,
+        "strength": 50,
+        "rangedStrength": 50,
+        "range": 6,
+        "cost": 325,
+        "requiredTech": "Flight",
+        "requiredResource": "Oil",
+        "upgradesTo": "Bomber",
+        "uniques": ["[+33]% Strength <when fighting in [Foreign] tiles>"],
+        "promotions": ["Siege I"],
+        "obsoleteTech": "Radar",
+        "attackSound": "bombing"
+    },
+    
+    {
+        "name": "Brigadas Internacionales",
+        "unitType": "Gunpowder",
+        "uniqueTo": "Испанская Республика",
+        "replaces": "Infantry",
+        "movement": 2,
+        "strength": 70,
+        "cost": 375,
+        "requiredTech": "Plastics",
+        "upgradesTo": "Mechanized Infantry",
+        "uniques": [
+            "[+15]% Strength <when fighting in [Foreign] tiles>",
+            "[+15]% Strength <when adjacent to a [Испанская Республика] unit>",
+            "Can move immediately once bought"
+        ],
+        "obsoleteTech": "Mobile Tactics",
+        "attackSound": "shot"
+    },
+
+    // Czechoslovakia (Чехословакия)
+    {
+        "name": "ČKD LT vz. 38",
+        "unitType": "Armored",
+        "movement": 6,
+        "replaces": "Tank",
+        "uniqueTo": "Чехословакия",
+        "strength": 64,
+        "cost": 375,
+        "requiredTech": "Combined Arms",
+        "upgradesTo": "Modern Armor",
+        "uniques": ["Can move after attacking", "No defensive terrain bonus", "[+15]% Strength <vs [Gunpowder] units>"],
+        "promotions": ["Drill I"],
+        "attackSound": "tankshot"
+    },
+    
+    // Switzerland (Швейцария)
+    {
+        "name": "Landwehr",
+        "unitType": "Gunpowder",
+        "replaces": "Infantry",
+        "uniqueTo": "Швейцария",
+        "movement": 2,
+        "strength": 65,
+        "cost": 350,
+        "requiredTech": "Plastics",
+        "upgradesTo": "Mechanized Infantry",
+        "promotions": ["Morale"],
+        "obsoleteTech": "Mobile Tactics",
+        "attackSound": "shot"
+    },
+    
+    // Turkey (Турция)
+    {
+        "name": "Piyade",
+        "unitType": "Gunpowder",
+        "replaces": "Great War Infantry",
+        "uniqueTo": "Турция",
+        "movement": 2,
+        "strength": 48,
+        "cost": 320,
+        "requiredTech": "Plastics",
+        "upgradesTo": "Infantry",
+        "uniques": ["[+15]% Strength <when fighting in [Hill] tiles>"],
+        "promotions": ["Drill I"],
+        "obsoleteTech": "Mobile Tactics",
+        "attackSound": "shot"
+    },
+
+    // ==============================
+    // REPLACED UNITS (Заменённые юниты)
+    // ==============================
+    
+    {
+        "name": "Panzer",
+        "unitType": "Armored",
+        "replaces": "Tank",
+        "uniqueTo": "Германский Рейх",
+        "movement": 6,
+        "strength": 80,
+        "cost": 375,
+        "requiredTech": "Combustion",
+        "requiredResource": "Oil",
+        "upgradesTo": "Modern Armor",
+        "uniques": ["Can move after attacking", "No defensive terrain bonus", "Unbuildable"],
+        "attackSound": "tankshot"
+    },
+    
+    {
+        "name": "U-Boat",
+        "replaces": "Submarine",
+        "unitType": "Submarine",
+        "uniqueTo": "Германский Рейх",
+        "movement": 5,
+        "strength": 35,
+        "rangedStrength": 60,
+        "cost": 325,
+        "requiredTech": "Refrigeration",
+        "upgradesTo": "Nuclear Submarine",
+        "promotions": ["Commerce Raider"],
+        "uniques": [
+            "[+75]% Strength <when attacking>",
+            "Can only attack [Water] tiles",
+            "Never appears as a Barbarian unit",
+            "[+1] Movement <in [Foreign] tiles>"
+        ],
+        "attackSound": "torpedo"
+    }
 		]
-		"obsoleteTech": "Mobile Tactics",
-		"attackSound": "shot"
-	},
-
-	{
-		"name": "ČKD LT vz. 38",
-		"unitType": "Armored",
-		"movement": 6,
-		"replaces": "Tank",
-		"uniqueTo": "Czechoslovakia",
-		"strength": 64,
-		"cost": 375,
-		"requiredTech": "Combined Arms",
-		"upgradesTo": "Modern Armor",
-		"uniques": ["Can move after attacking","No defensive terrain bonus", "[+15]% Strength <vs [Gunpowder] units>"],
-		"promotions": ["Drill I"],
-		"attackSound": "tankshot"
-	},
-	
-	{
-		"name": "Landwehr",
-		"unitType": "Gunpowder",
-		"replaces": "Infantry",
-		"uniqueTo": "Switzerland",
-		"movement": 2,
-		"strength": 65,
-		"cost": 350,
-		"requiredTech": "Plastics",
-		"upgradesTo": "Mechanized Infantry",
-		"promotions": ["[Landwehr] ability"]
-		"obsoleteTech": "Mobile Tactics",
-		"attackSound": "shot"
-	},
-	
-	{
-		"name": "Piyade",
-		"unitType": "Gunpowder",
-		"replaces": "Great War Infantry",
-		"uniqueTo": "Turkey",
-		"movement": 2,
-		"strength": 48,
-		"cost": 320,
-		"requiredTech": "Plastics",
-		"upgradesTo": "Mechanized Infantry",
-		"uniques": ["[+15]% Strength <when fighting in [Hill] tiles>"],
-		"promotions": ["Drill I"]
-		"obsoleteTech": "Mobile Tactics",
-		"attackSound": "shot"
-	},
-	
-// Replaced Units
-	
-	{
-		"name": "Panzer",
-		"unitType": "Armored",
-		"replaces": "Tank",
-		"uniqueTo": "Germany"
-		"movement": 6,
-		"strength": 80,
-		"cost": 375,
-		"requiredTech": "Combustion",
-		"requiredResource": "Oil",
-		"upgradesTo": "Modern Armor",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","Cannot be purchased","Will not be displayed in Civilopedia","Unbuildable"],
-		"attackSound": "tankshot"
-		//German unique unit, stronger than Tank
-		//Is replaced by Tiger I instead
-	},
-	
-	{
-		"name": "U-Boat",
-		"replaces": "Submarine"
-		"unitType": "Submarine",
-		"uniqueTo": "Germany",
-		"movement": 5,
-		"strength": 35,
-		"rangedStrength": 60,
-		"cost": 325,
-		"requiredTech": "Refrigeration",
-		"upgradesTo": "Nuclear Submarine",
-		"promotion": "[Commerce Raider]",
-		"uniques": ["[+75]% Strength <when attacking>", "Can only attack [Water] tiles", "Never appears as a Barbarian unit","[+1] Movement <in [Foreign] tiles>"],
-		"attackSound": "torpedo" //Replace with another Imperial German unit
-	}
-        ]
